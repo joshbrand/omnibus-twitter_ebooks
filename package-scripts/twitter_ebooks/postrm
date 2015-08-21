@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Perform necessary twitter_ebooks removal steps
+# after package is uninstalled.
+#
+
+echo "twitter_ebooks has been uninstalled!"
+
+exit 0

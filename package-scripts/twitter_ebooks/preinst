@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Perform necessary twitter_ebooks setup steps
+# before package is installed.
+#
+
+echo "You're about to install twitter_ebooks!"
