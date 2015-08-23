@@ -42,3 +42,7 @@ dependency "version-manifest"
 
 exclude "**/.git"
 exclude "**/bundler/git"
+
+package :msi do
+  upgrade_code "e494e359-d447-440f-800e-86d28d27d0bc"
+end
