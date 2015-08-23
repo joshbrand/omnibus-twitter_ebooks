@@ -26,5 +26,9 @@ build do
       " --no-rdoc", env: env
 
   appbundle 'twitter_ebooks'
-end
 
+  if windows?
+    delete "#{install_dir}/embedded/mingw"
+    delete "#{install_dir}/embedded/lib/perl5"
+  end
+end

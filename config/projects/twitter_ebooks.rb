@@ -12,15 +12,18 @@ homepage "https://CHANGE-ME.com"
 # and /opt/twitter_ebooks on all other platforms
 install_dir "#{default_root}/#{name}"
 
-build_version Omnibus::BuildVersion.semver
+build_version do
+  source :git, from_dependency: 'twitter_ebooks'
+  output_format :semver
+end
 build_iteration 1
 
 if windows?
   # NOTE: Ruby DevKit fundamentally CANNOT be installed into "Program Files"
   #       Native gems will use gcc which will barf on files with spaces,
   #       which is only fixable if everyone in the world fixes their Makefiles
-  install_dir  "#{default_root}/opscode/#{name}"
-  package_name "chef-client"
+  install_dir  "#{default_root}/#{name}"
+  package_name "twitter_ebooks"
 else
   install_dir "#{default_root}/#{name}"
 end
