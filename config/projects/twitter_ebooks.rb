@@ -12,10 +12,7 @@ homepage "https://CHANGE-ME.com"
 # and /opt/twitter_ebooks on all other platforms
 install_dir "#{default_root}/#{name}"
 
-build_version do
-  source :git, from_dependency: 'twitter_ebooks'
-  output_format :semver
-end
+build_version '3.1.0'
 build_iteration 1
 
 if windows?
