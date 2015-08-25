@@ -6,9 +6,11 @@ source git: "git://github.com/mispy/twitter_ebooks.git"
 if windows?
   dependency "ruby-windows"
   dependency "ruby-windows-devkit"
+  dependency "openssl-windows"
 else
   dependency "ruby"
   dependency "rubygems"
+  dependency "openssl"
 end
 
 dependency "bundler"

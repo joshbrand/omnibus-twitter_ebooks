@@ -1,5 +1,5 @@
 #
-# Copyright 2015 YOUR NAME
+# Copyright 2015 Josh Brand
 #
 # All Rights Reserved.
 #
